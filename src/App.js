@@ -14,7 +14,7 @@ function App() {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "https://energy-backend.onrender.com/api/data"
+          "https://energy-backend-new.onrender.com/api/data"
         );
         setData(res.data);
       } catch (error) {

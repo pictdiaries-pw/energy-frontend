@@ -1,20 +1,61 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #f4f6f8;
+  background: #0f172a;
+  color: white;
 }
 
 .container {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  margin: 20px auto;
-  width: 300px;
+  background: #1e293b;
   padding: 20px;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-size: 24px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #334155;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.highlight {
+  background: #16a34a;
+}
+
+.reset-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: darkred;
 }
